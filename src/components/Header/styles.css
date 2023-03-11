@@ -1,0 +1,28 @@
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    background-color: rgb(37, 131, 126);
+    color: #fff;
+    padding: 20px;
+}
+
+header > h1 {
+    flex: 1;
+}
+
+.header__buttons{
+    flex:0.3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__buttons > a{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+}
