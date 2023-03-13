@@ -16,6 +16,7 @@ header > h1 {
 .header__buttons{
     flex:0.3;
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -25,4 +26,15 @@ header > h1 {
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
+}
+
+.header__buttons > button{
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
 }

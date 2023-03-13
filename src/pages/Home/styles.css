@@ -1,0 +1,30 @@
+.create-post-button {
+    position: fixed;
+    bottom: 10%;
+    left: 10%;
+    background-color: cornflowerblue;
+    border: 1px solid cornflowerblue;
+    border-radius: 20px;
+    padding: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.create-post-button:hover {
+    background-color:rgb(136, 173, 242);
+}
+
+.create-post-button:active {
+    /* background-color:rgb(134, 164, 221); */
+    transform: scale(0.95);
+}
+
+.home-page .create-post--active{
+    background-color:rgba(0, 0, 0, 1);
+    opacity: 0.1;
+}
+
+.create-post--active {
+    background-color:rgba(0, 0, 0, 1);
+}

@@ -7,7 +7,7 @@ import './styles.css';
 export default function Login() {
     return (
         <div className="login">
-            <CustomForm formName='Login'/>
+            <CustomForm formName='Login' submitTo="login"/>
 
         </div>
     );

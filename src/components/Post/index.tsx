@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useContext} from 'react';
 
 import {Avatar} from '@mui/material';
+import {AuthContext} from '../../context/AuthContext';
 
 import './styles.css';
 
@@ -17,6 +18,7 @@ export default function Post({
     timestamp,
     avatar
 }: PostProps) {
+    const { userInfo }: any = useContext(AuthContext);
     return (
         <div className="post">
             <div className="post__avatar">
@@ -24,7 +26,7 @@ export default function Post({
             </div>
             <div className='post__content'>
                 <div className="post__header">
-                    <h3>{username}</h3>    
+                    <h3>{userInfo ? username : "User"}</h3>    
                     {timestamp && <p>{timestamp} ago</p>}
                 </div>
                 <div className="post__body">
