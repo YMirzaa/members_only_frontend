@@ -29,18 +29,20 @@ export default function CustomForm({
             method: 'POST',
             headers: { 'Content-Type': 'application/json',
             },
-            
+            withCredentials: true
+              
         };
         
       axios.post(`${BASE_URL}/auth/${submitTo}`, data , requestOptions)
         .then(res => {
             if(res.data.user){
                 setUserInfo(res.data.user.username);
+                //save to local storage
             }
             navigate('/');
         })
         .catch(err => {
-          console.log(err.response.data);
+          console.log(err);
         //   console.log('gonderilemedi');
         });
     };
